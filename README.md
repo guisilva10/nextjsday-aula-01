@@ -38,6 +38,7 @@ Durante a inicialização, selecione as seguintes opções:
 - TypeScript: ✅
 - ESLint: ✅
 - Tailwind CSS: ✅
+- `src/` directory: ✅
 - Import alias (@/): ✅
 - App Router (recomendado): ✅
 
@@ -62,24 +63,30 @@ Selecione as seguintes opções:
 npx shadcn@2.1.6 add card button tooltip separator
 ```
 
+### 4. Instalação dos componentes do MagicUi
+
+```bash
+npx shadcn@2.1.6 add "https://magicui.design/r/dock"
+```
+
 ### 5. Estrutura de pastas e componentes
 
 Crie os diretórios para componentes e utilitários:
 
 ```bash
-mkdir -p app/_components app/_lib
+mkdir -p src/app/_components src/app/_lib
 ```
 
 ### 6. Crie os componentes Header e Hero
 
 ```bash
-touch app/_components/Header.tsx app/_components/Hero.tsx
+touch src/app/_components/Header.tsx src/app/_components/Hero.tsx
 ```
 
 ### 7. Configure o arquivo utils.ts
 
 ```bash
-touch app/_lib/utils.ts
+touch src/app/_lib/utils.ts
 ```
 
 ### 8. Ajuste o aliases no arquivo components.js
@@ -114,21 +121,24 @@ Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o 
 
 ```
 meu-portfolio/
-├── app/
-│   ├── _components/       # Componentes da aplicação
-│   │   ├── Header.tsx     # Componente de cabeçalho
-│   │   ├── Hero.tsx       # Componente hero (apresentação)
-│   │   └── ui/            # Componentes do shadcn/ui
-│   ├── _lib/              # Utilitários e funções
-│   │   └── utils.ts       # Funções utilitárias
-│   ├── layout.tsx         # Layout principal
-│   └── page.tsx           # Página inicial
-├── public/                # Arquivos estáticos
-├── components.json        # Configuração do shadcn/ui
-├── next.config.js         # Configuração do Next.js
-├── package.json           # Dependências do projeto
-├── tailwind.config.js     # Configuração do Tailwind CSS
-└── tsconfig.json          # Configuração do TypeScript
+├── src/
+│   ├── app/
+│   │   ├── _components/       # Componentes da aplicação
+│   │   │   ├── Header.tsx     # Componente de cabeçalho
+│   │   │   ├── Hero.tsx       # Componente hero (apresentação)
+│   │   │   └── ui/            # Componentes do shadcn/ui
+│   │   ├── _lib/              # Utilitários e funções
+│   │   │   └── utils.ts       # Funções utilitárias
+│   │   ├── layout.tsx         # Layout principal
+│   │   └── page.tsx           # Página inicial
+├── public/                    # Arquivos estáticos
+├── components/                    # Componentes de MagicUi
+│   │   ├── magicui/              # Magic Ui
+├── components.json            # Configuração do shadcn/ui
+├── next.config.js             # Configuração do Next.js
+├── package.json               # Dependências do projeto
+├── tailwind.config.js         # Configuração do Tailwind CSS
+└── tsconfig.json              # Configuração do TypeScript
 ```
 
 ## 📝 Próximos Passos
