@@ -70,7 +70,7 @@ const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/guisilva10",
+        url: "https://github.com/guisilva10/nextjsday-aula-01",
         icon: Icons.github,
       },
       LinkedIn: {
@@ -78,7 +78,7 @@ const DATA = {
         url: "https://www.linkedin.com/in/guilherme-willem-24a816232/",
         icon: Icons.linkedin,
       },
-      X: {
+      Youtube: {
         name: "Youtube",
         url: "https://www.youtube.com/channel/UCLPB6ZHTzFmMXV9ENklJVMA/",
         icon: Icons.youtube,
