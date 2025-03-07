@@ -1,9 +1,16 @@
+import { NumberTicker } from "@/components/magicui/number-ticker";
 import Image from "next/image";
 
 const AboutSection = () => {
   return (
     <section id="sobre" className="py-16 px-6">
       <div>
+        <div className="flex items-center flex-col justify-center mb-14">
+          <div className="inline-block mb-2 animate-pulse rounded-lg bg-primary/10 border border-primary/80 text-primary px-3 py-1 text-sm">
+            quem é Guilherme Silva ?
+          </div>
+          <h2 className="text-4xl font-bold">Sobre Mim</h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[400px] rounded-lg overflow-hidden">
             <Image
@@ -14,7 +21,7 @@ const AboutSection = () => {
             />
           </div>
           <div className="space-y-6">
-            <div className="inline-block rounded-lg bg-primary/10 border border-primary/80 text-primary px-3 py-1 text-sm">
+            <div className="inline-block border-b border-primary/80 text-primary px-3 py-1 text-sm">
               3 anos de experiência
             </div>
             <h2 className="text-3xl font-bold tracking-tight">
@@ -33,19 +40,25 @@ const AboutSection = () => {
             </p>
             <div className="flex gap-4">
               <div className="flex flex-col">
-                <span className="text-3xl font-bold text-primary">120+</span>
+                <span className="text-3xl font-bold text-primary">
+                  <NumberTicker value={120} />+
+                </span>
                 <span className="text-sm text-muted-foreground">
                   Clientes Satisfeitos
                 </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-3xl font-bold text-primary">30+</span>
+                <span className="text-3xl font-bold text-primary">
+                  <NumberTicker value={30} />+
+                </span>
                 <span className="text-sm text-muted-foreground">
                   Sites Criados
                 </span>
               </div>
               <div className="flex flex-col">
-                <span className="text-3xl font-bold text-primary">50+</span>
+                <span className="text-3xl font-bold text-primary">
+                  <NumberTicker value={50} />+
+                </span>
                 <span className="text-sm text-muted-foreground">
                   Receitas Exclusivas
                 </span>

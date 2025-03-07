@@ -71,3 +71,23 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #bd480c, #bd480c);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #bd480c, #bd480c);
+  }
+}

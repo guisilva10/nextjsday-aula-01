@@ -19,7 +19,9 @@ const HeroHome = () => {
             <CodeIcon className="size-4 ml-1" />
           </p>
         </div>
-        <h1 className="text-2xl font-bold">Olá, me chamo Guilherme</h1>
+        <h1 className="text-2xl font-bold">
+          Olá, me chamo <span className="text-primary">Guilherme</span>
+        </h1>
         <p className="text-xs text-muted-foreground mb-4">
           Sou um Desenvolvedor Full Stack experiente com sólida formação na
           criação e desenvolvimento de aplicações web escaláveis e de alta
