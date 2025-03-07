@@ -4,7 +4,7 @@ import { CodeIcon } from "lucide-react";
 
 const HeroHome = () => {
   return (
-    <div className="flex justify-center flex-col gap-x-4 items-center">
+    <div className="flex justify-center h-screen flex-col gap-x-4 items-center">
       <div className="w-1/2 flex flex-col items-center justify-center">
         <div className="flex flex-col gap-y-2 items-center">
           <Image
