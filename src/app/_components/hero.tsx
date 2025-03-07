@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { CodeIcon } from "lucide-react";
 
 const HeroHome = () => {
   return (
@@ -13,8 +14,9 @@ const HeroHome = () => {
             height={100}
             className="rounded-full"
           />
-          <p className="bg-primary/10 text-primary text-sm rounded-lg p-1 border border-primary/80">
+          <p className="bg-primary/10 flex items-center animate-pulse text-primary text-xs rounded-lg p-2 border border-primary/80">
             Desenvolvedor FullStack
+            <CodeIcon className="size-4 ml-1" />
           </p>
         </div>
         <h1 className="text-2xl font-bold">Olá, me chamo Guilherme</h1>
@@ -24,7 +26,7 @@ const HeroHome = () => {
           qualidade.
         </p>
         <div className="flex items-center gap-x-4 justify-start">
-          <Button className="animate-pulse hover:bg-primary">Saiba Mais</Button>
+          <Button className="hover:bg-primary">Saiba Mais</Button>
           <Button variant="outline">Ver projetos</Button>
         </div>
       </div>
